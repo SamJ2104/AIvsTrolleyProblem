@@ -1,0 +1,100 @@
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    margin-bottom: -15px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.items-bar {
+    width: 20%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.items-bar h3 {
+    text-align: center;
+}
+
+#items-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer; /* Changed to pointer for both drag and click */
+}
+
+.item i {
+    font-size: 24px; /* Increase icon size */
+    margin-right: 10px;
+}
+
+.selected {
+    outline: 2px solid rgb(100, 161, 231); /* Add blue outline for selected items */
+}
+
+.trolley-problem {
+    width: 70%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.track {
+    width: 100%;
+    height: 400px; /* Increase track height */
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.track p {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.track-item {
+    position: absolute;
+    font-size: 24px; /* Increase track item size */
+}
+
+#solve-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#result-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.green {
+    background-color: #edd4d4;
+}
